@@ -22,6 +22,9 @@ export default function Subjects() {
                 alt={subject.name} 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=800&auto=format&fit=crop";
+                }}
               />
               <div className={`absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-300 ${subject.color}`} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
