@@ -1,0 +1,8 @@
+{
+  "name": "Poddar's Classes",
+  "description": "Premium coaching institute landing page for Poddar's Classes, offering quality education for Classes VI to XII.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
