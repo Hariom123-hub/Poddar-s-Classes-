@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/50 to-transparent z-10" />
       </div>
 
-      <div className="absolute inset-0 z-20 flex items-center py-12 md:py-0">
+      <div className="absolute inset-0 z-20 flex items-center">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Content */}
@@ -54,7 +54,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-2xl"
+              className="max-w-2xl py-8 md:py-0"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs md:text-sm font-bold mb-4 md:mb-8 border border-primary/30 backdrop-blur-md">
                 <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
@@ -99,9 +99,10 @@ export default function Hero() {
             >
               <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-[4/5] rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl border-4 md:border-8 border-white bg-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="https://images.unsplash.com/photo-1577896851231-70ef1460375e?q=80&w=800&auto=format&fit=crop" 
-                  alt="Teacher" 
+                  src="https://images.unsplash.com/photo-1544717297-fa95b3ee51f3?q=80&w=800&auto=format&fit=crop" 
+                  alt="Faculty" 
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
                 />
               </div>
             </motion.div>

@@ -17,12 +17,15 @@ export default function Header() {
     <header className="sticky top-0 left-0 right-0 z-50 bg-white shadow-sm h-[75px] md:h-[85px] flex items-center">
       <div className="w-full container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-[14px]">
-          <div className="w-[52px] h-[52px] rounded-2xl border border-gray-100 overflow-hidden flex-shrink-0 bg-white shadow-sm">
+          <div className="w-[52px] h-[52px] rounded-2xl border border-gray-100 overflow-hidden flex-shrink-0 bg-white shadow-sm flex items-center justify-center">
             <img 
               src="/logo.jpg" 
-              alt="Poddar's Classes Logo" 
+              alt="Poddar's Classes" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=100&auto=format&fit=crop";
+              }}
             />
           </div>
           <div className="flex flex-col justify-center">
